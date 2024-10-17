@@ -1,4 +1,4 @@
-// Copyright Phoenix Head Game Studios
+// Copyright Druid Mechanics
 
 #pragma once
 
@@ -14,17 +14,14 @@ UCLASS()
 class AURA_API AAuraEnemy : public AAuraCharacterBase, public IEnemyInterface
 {
 	GENERATED_BODY()
-
-	
-
 public:
 	AAuraEnemy();
 
-	// IEnemyInterface
+	/** Enemy Interface */
 	virtual void HighlightActor() override;
 	virtual void UnHighlightActor() override;
-	// ~IEnemyInterface
-
+	/** end Enemy Interface */
+	
 protected:
 	virtual void BeginPlay() override;
 };

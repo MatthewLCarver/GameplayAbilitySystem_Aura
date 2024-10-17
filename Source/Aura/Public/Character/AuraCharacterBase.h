@@ -1,4 +1,4 @@
-// Copyright Phoenix Head Game Studios
+// Copyright Druid Mechanics
 
 #pragma once
 
@@ -7,7 +7,7 @@
 #include "GameFramework/Character.h"
 #include "AuraCharacterBase.generated.h"
 
-class UAuraAbilitySystemComponent;
+class UAbilitySystemComponent;
 class UAttributeSet;
 
 UCLASS(Abstract)
@@ -19,10 +19,8 @@ public:
 	AAuraCharacterBase();
 	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 	UAttributeSet* GetAttributeSet() const { return AttributeSet; }
-
 protected:
 	virtual void BeginPlay() override;
-
 
 	UPROPERTY(EditAnywhere, Category = "Combat")
 	TObjectPtr<USkeletalMeshComponent> Weapon;

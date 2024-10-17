@@ -1,4 +1,4 @@
-// Copyright Phoenix Head Game Studios
+// Copyright Druid Mechanics
 
 
 #include "Game/AuraGameModeBase.h"
